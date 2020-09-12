@@ -215,7 +215,7 @@
 <div class="snote red"><p>使用的是超能小紫提供的服务：<a href="https://cloud.mokeyjay.com/pixiv">https://cloud.mokeyjay.com/pixiv</a>，也可以自行搭建，搭建方式请看这里-&gt;<a href="https://www.mokeyjay.com/archives/1063">传送门</a></p>
 </div>
 <ol>
-<li>在<code>themes\Butterfly\layout\includes\widget</code>文件夹新建<code>card_pixiv.pug</code>文件，文件内容如下：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.card-widget.card-pixiv</span><br><span class="line">  .card-content</span><br><span class="line">    .item-headline</span><br><span class="line">      i.fa.fa-image(aria-hidden&#x3D;&quot;true&quot;)</span><br><span class="line">      span&#x3D; _p(&#39;aside.card_pixiv&#39;)</span><br><span class="line">    iframe(src&#x3D;&quot;https:&#x2F;&#x2F;cloud.mokeyjay.com&#x2F;pixiv&quot; frameborder&#x3D;&quot;0&quot; style&#x3D;&quot;width:99%;height:380px;margin:0;&quot;)</span><br></pre></td></tr></table></figure>
+<li>在<code>themes\Butterfly\layout\includes\widget</code>文件夹新建<code>card_pixiv.pug</code>文件，文件内容如下：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.card-widget.card-pixiv</span><br><span class="line">  .card-content</span><br><span class="line">    .item-headline</span><br><span class="line">      i.fas.fa-image(aria-hidden&#x3D;&quot;true&quot;)</span><br><span class="line">      span&#x3D; _p(&#39;aside.card_pixiv&#39;)</span><br><span class="line">    iframe(src&#x3D;&quot;https:&#x2F;&#x2F;cloud.mokeyjay.com&#x2F;pixiv&quot; frameborder&#x3D;&quot;0&quot; style&#x3D;&quot;width:99%;height:380px;margin:0;&quot;)</span><br></pre></td></tr></table></figure>
 </li>
 <li>编辑<code>themes\Butterfly\layout\includes\widget\index.pug</code>文件，在你想要显示的位置引入上面的文件，具体参考你使用的版本</li>
 <li>编辑<code>butterfly.yml</code>文件，在<code>card_webinfo</code>下面添加一行<code>card_pixiv: true</code></li>
@@ -995,13 +995,13 @@ tag 标签格式</dd>
 <p>简单示例</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-seiuNRcd" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-BRAzQUIV" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-TWmpsBud" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-wCVxAgEh" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
     ></div>
 <h4 id="audio"><a class="markdownIt-Anchor" href="#audio"></a> Audio</h4>
