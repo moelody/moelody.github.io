@@ -558,17 +558,17 @@
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 <blockquote><p>style: flat</p>
 </blockquote>
-<div class="note default"><p>default 提示块标籤</p>
+<div class="note default flat"><p>default 提示块标籤</p>
 </div>
-<div class="note primary no-icon"><p>primary 提示块标籤</p>
+<div class="note primary no-icon flat"><p>primary 提示块标籤</p>
 </div>
-<div class="note success"><p>success 提示块标籤</p>
+<div class="note success flat"><p>success 提示块标籤</p>
 </div>
-<div class="note info"><p>info 提示块标籤</p>
+<div class="note info flat"><p>info 提示块标籤</p>
 </div>
-<div class="note warning"><p>warning 提示块标籤</p>
+<div class="note warning flat"><p>warning 提示块标籤</p>
 </div>
-<div class="note danger"><p>danger 提示块标籤</p>
+<div class="note danger flat"><p>danger 提示块标籤</p>
 </div>
 <h2 id="自定义图标阿里图标及颜色"><a class="markdownIt-Anchor" href="#自定义图标阿里图标及颜色"></a> 自定义图标（阿里图标）及颜色</h2>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">/* default */</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">  <span class="attr">class</span>=<span class="string">&quot;note icon custom iconfont icon-weixin&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">&quot;background: #f7f7f7;border-left-color: #777;&quot;</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>default<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -1016,13 +1016,13 @@ tag 标签格式</dd>
 <p>简单示例</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-RwXOebDV" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-emzgSrkN" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-QTikxjEb" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-fKXTyKQV" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
     ></div>
 <h4 id="audio"><a class="markdownIt-Anchor" href="#audio"></a> Audio</h4>
