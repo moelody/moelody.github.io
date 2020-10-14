@@ -256,6 +256,70 @@
       </tags>
   </entry>
   <entry>
+    <title>高级资源管理器Directory Opus的DIY</title>
+    <url>/posts/ec931d23/</url>
+    <content><![CDATA[<h1 id="安装opus群内限定"><a class="markdownIt-Anchor" href="#安装opus群内限定"></a> 安装Opus（群内限定）</h1>
+<ol>
+<li>
+<p>安装主程序<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014203955.png" alt="" /></p>
+</li>
+<li>
+<p>解压破解文件覆盖原文件<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014220535.png" alt="" /></p>
+</li>
+<li>
+<p><a href="https://www.gpsoft.com.au/DScripts/evalrequest.asp">申请许可证</a></p>
+</li>
+<li>
+<p>打开程序安装证书<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014221054.png" alt="" /></p>
+</li>
+</ol>
+<div class="snote info"><p>PS:如显示过N天过期属于正常现象，到期后仍可继续使用</p></div>
+<h1 id="配置样式"><a class="markdownIt-Anchor" href="#配置样式"></a> 配置样式</h1>
+<h2 id="导入主题"><a class="markdownIt-Anchor" href="#导入主题"></a> 导入主题</h2>
+<ol>
+<li>
+<p>导入主题文件<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014222044.png" alt="" /></p>
+</li>
+<li>
+<p>并应用主题后<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014221623.png" alt="" /></p>
+</li>
+<li>
+<p>如需更改样式，可到设置中显示配置中自行更改<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014222525.png" alt="" /></p>
+</li>
+</ol>
+<h2 id="工具栏配置"><a class="markdownIt-Anchor" href="#工具栏配置"></a> 工具栏配置</h2>
+<ol>
+<li>
+<p>在工具栏处右键，自定义导入博主的工具栏配置<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014223128.png" alt="" /></p>
+</li>
+<li>
+<p>启用后能看到三处横向工具栏，为博主常用。第三行工具栏的磁盘快捷访问等等，各位可自行尝试配置，后面我详细讲讲<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014223409.png" alt="" /></p>
+</li>
+<li>
+<p>工具栏详细配置（暂留，以后写）</p>
+</li>
+</ol>
+<h2 id="更改文件夹图标"><a class="markdownIt-Anchor" href="#更改文件夹图标"></a> 更改文件夹图标</h2>
+<ol>
+<li>
+<p>使用7tsp对文件夹图标进行修改，使用博主推荐搭配的简易扁平Pure黑色版或是到<a href="https://zhutix.com/tag/tubiao/">美化网</a>下载自己喜欢的图标包(<strong>注意图标包支持的工具可能会有所不同</strong>)，点击Start等待完成后重启即可<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014223818.png" alt="" /></p>
+</li>
+<li>
+<p>其次因为权限原因，会发现快速访问的图标没有更改，点击链接根据教程修改权限后重新打开程序后即可，必要时可重启<img src= "https://cdn.jsdelivr.net/gh/moelody/cdn@imgbot/blog/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/moelody/HexoStaticFile1@master/2020/10/14/20201014224242.png" alt="" /></p>
+</li>
+</ol>
+<h2 id="文件树美化"><a class="markdownIt-Anchor" href="#文件树美化"></a> 文件树美化</h2>
+]]></content>
+      <categories>
+        <category>软件</category>
+        <category>Directory Opus</category>
+      </categories>
+      <tags>
+        <tag>opus</tag>
+        <tag>explorer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Front-matter</title>
     <url>/posts/31e4c77c/</url>
     <content><![CDATA[<h3 id="post-front-matter"><a class="markdownIt-Anchor" href="#post-front-matter"></a> Post Front-matter</h3>
@@ -1016,13 +1080,13 @@ tag 标签格式</dd>
 <p>简单示例</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-qItXcaPX" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-vHMAsGMf" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-DLPhgomQ" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-FbYvsRCz" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
     ></div>
 <h4 id="audio"><a class="markdownIt-Anchor" href="#audio"></a> Audio</h4>
