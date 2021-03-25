@@ -213,49 +213,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows下利用bat和ffmpeg批量处理图片</title>
-    <url>/posts/4f62ec51/</url>
-    <content><![CDATA[<h1 id="bat-和-cmd-命令的语法差异"><a class="markdownIt-Anchor" href="#bat-和-cmd-命令的语法差异"></a> bat 和 cmd 命令的语法差异</h1>
-<p>在 cmd 命令中利用 ffmpeg 将一系列图片转换为一个视频文件的代码通常是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ffmpeg -i path1&#x2F;foo-%03d.jpg remux.mp4</span><br></pre></td></tr></table></figure>
-<p>为了进行更丰富的操作，则通常需要将命令写入一个 bat 文件中，但是 bat 和 cmd 命令的语法有一点小差异<br />
-如下，即在通配符%03d.jpg 前加了个%</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ffmpeg -i path1&#x2F;foo-%%03d.jpg remux.mp4</span><br><span class="line">ffmpeg -i path2&#x2F;foo-%%03d.jpg remux.mp4</span><br><span class="line">ffmpeg -i path3&#x2F;foo-%%03d.jpg remux.mp4</span><br></pre></td></tr></table></figure>
-<div class='tip warning'><p>
-这是因为bat相比于直接在cmd中输入命令，%会有一个转义的功能，所以需要多加一个%
-<p></div>
-<h1 id="ffmpeg-批量转换图片为指定格式"><a class="markdownIt-Anchor" href="#ffmpeg-批量转换图片为指定格式"></a> ffmpeg 批量转换图片为指定格式</h1>
-<div class="snote info"><p>本文将提到以下几种指定格式的转换</p></div>
-<div class="checkbox plus green checked">
-  <input type="checkbox" checked />
-  <p>gif</p>
-</div>
-<div class="checkbox plus green checked">
-  <input type="checkbox" checked />
-  <p>webm</p>
-</div>
-<div class="checkbox plus green checked">
-  <input type="checkbox" checked />
-  <p>mp4</p>
-</div>
-<p><code>REM</code>为注释内容，其中转换为<code>webm</code>命令中<br />
-将视频比特率设置为<code>0</code>很重要。如果未指定视频比特率，则默认为较低值，这会导致使用 “约束质量” 模式，会使画质降低。<br />
-另外，如果要真无损，那么使用<code>-lossless 1</code>或<code>-crf 0</code>选项，在文件大小上会增加一倍多。因为转码过程中，不仅会添加有损视频编码中的正常错误，而且还会在格式尝试保留旧的内容。</p>
-<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">set</span> /p ext=请输入输出文件扩展名(mp4/gif/webm/...):</span><br><span class="line"><span class="built_in">del</span> config.txt &gt;<span class="built_in">nul</span> <span class="number">2</span>&gt;<span class="built_in">nul</span></span><br><span class="line"><span class="built_in">del</span> palette.png &gt;<span class="built_in">nul</span> <span class="number">2</span>&gt;<span class="built_in">nul</span></span><br><span class="line"><span class="comment">REM 批量获取图片文件并存入文件中，duration为图片之间的间隔时间</span></span><br><span class="line"><span class="keyword">for</span> /r . <span class="variable">%%a</span> <span class="keyword">in</span> (*.png,*.jpg) <span class="keyword">do</span> (</span><br><span class="line">  <span class="built_in">echo</span> file ^&#x27;<span class="variable">%%~</span>nxa^&#x27; &gt;&gt; config.txt</span><br><span class="line">  <span class="built_in">echo</span> duration <span class="number">0</span>.<span class="number">12</span> &gt;&gt; config.txt</span><br><span class="line">)</span><br><span class="line"><span class="comment">REM -framerate帧率可以不指定</span></span><br><span class="line"><span class="comment">REM -vf图片滤镜</span></span><br><span class="line"><span class="comment">REM -b:v视频比特率</span></span><br><span class="line"><span class="comment">REM -CRF恒定质量模式，从 0（最佳质量）到 63（最小文件大小）</span></span><br><span class="line"><span class="keyword">if</span> <span class="variable">%ext%</span>==gif (</span><br><span class="line">ffmpeg -f concat -i config.txt -vf palettegen palette.png</span><br><span class="line">ffmpeg -f concat -i config.txt -i palette.png -lavfi paletteuse -framerate <span class="number">30</span> remux.<span class="variable">%ext%</span> -y</span><br><span class="line">) <span class="keyword">else</span> <span class="keyword">if</span> <span class="variable">%ext%</span>==webm (</span><br><span class="line">ffmpeg -f concat -i config.txt -b:v <span class="number">0</span> -crf <span class="number">18</span> -framerate <span class="number">30</span> remux.<span class="variable">%ext%</span> -y</span><br><span class="line">) <span class="keyword">else</span> (</span><br><span class="line">ffmpeg -f concat -i config.txt -crf <span class="number">18</span> -framerate <span class="number">30</span> remux.<span class="variable">%ext%</span> -y</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>笔记</category>
-        <category>ffmpeg</category>
-      </categories>
-      <tags>
-        <tag>ffmpeg</tag>
-        <tag>bat</tag>
-        <tag>webm</tag>
-        <tag>gif</tag>
-        <tag>mp4</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>高级资源管理器Directory Opus的DIY</title>
     <url>/posts/ec931d23/</url>
     <content><![CDATA[<h1 id="安装opus群内限定"><a class="markdownIt-Anchor" href="#安装opus群内限定"></a> 安装Opus（群内限定）</h1>
@@ -317,6 +274,49 @@
       <tags>
         <tag>opus</tag>
         <tag>explorer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows下利用bat和ffmpeg批量处理图片</title>
+    <url>/posts/4f62ec51/</url>
+    <content><![CDATA[<h1 id="bat-和-cmd-命令的语法差异"><a class="markdownIt-Anchor" href="#bat-和-cmd-命令的语法差异"></a> bat 和 cmd 命令的语法差异</h1>
+<p>在 cmd 命令中利用 ffmpeg 将一系列图片转换为一个视频文件的代码通常是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ffmpeg -i path1&#x2F;foo-%03d.jpg remux.mp4</span><br></pre></td></tr></table></figure>
+<p>为了进行更丰富的操作，则通常需要将命令写入一个 bat 文件中，但是 bat 和 cmd 命令的语法有一点小差异<br />
+如下，即在通配符%03d.jpg 前加了个%</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ffmpeg -i path1&#x2F;foo-%%03d.jpg remux.mp4</span><br><span class="line">ffmpeg -i path2&#x2F;foo-%%03d.jpg remux.mp4</span><br><span class="line">ffmpeg -i path3&#x2F;foo-%%03d.jpg remux.mp4</span><br></pre></td></tr></table></figure>
+<div class='tip warning'><p>
+这是因为bat相比于直接在cmd中输入命令，%会有一个转义的功能，所以需要多加一个%
+<p></div>
+<h1 id="ffmpeg-批量转换图片为指定格式"><a class="markdownIt-Anchor" href="#ffmpeg-批量转换图片为指定格式"></a> ffmpeg 批量转换图片为指定格式</h1>
+<div class="snote info"><p>本文将提到以下几种指定格式的转换</p></div>
+<div class="checkbox plus green checked">
+  <input type="checkbox" checked />
+  <p>gif</p>
+</div>
+<div class="checkbox plus green checked">
+  <input type="checkbox" checked />
+  <p>webm</p>
+</div>
+<div class="checkbox plus green checked">
+  <input type="checkbox" checked />
+  <p>mp4</p>
+</div>
+<p><code>REM</code>为注释内容，其中转换为<code>webm</code>命令中<br />
+将视频比特率设置为<code>0</code>很重要。如果未指定视频比特率，则默认为较低值，这会导致使用 “约束质量” 模式，会使画质降低。<br />
+另外，如果要真无损，那么使用<code>-lossless 1</code>或<code>-crf 0</code>选项，在文件大小上会增加一倍多。因为转码过程中，不仅会添加有损视频编码中的正常错误，而且还会在格式尝试保留旧的内容。</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">set</span> /p ext=请输入输出文件扩展名(mp4/gif/webm/...):</span><br><span class="line"><span class="built_in">del</span> config.txt &gt;<span class="built_in">nul</span> <span class="number">2</span>&gt;<span class="built_in">nul</span></span><br><span class="line"><span class="built_in">del</span> palette.png &gt;<span class="built_in">nul</span> <span class="number">2</span>&gt;<span class="built_in">nul</span></span><br><span class="line"><span class="comment">REM 批量获取图片文件并存入文件中，duration为图片之间的间隔时间</span></span><br><span class="line"><span class="keyword">for</span> /r . <span class="variable">%%a</span> <span class="keyword">in</span> (*.png,*.jpg) <span class="keyword">do</span> (</span><br><span class="line">  <span class="built_in">echo</span> file ^&#x27;<span class="variable">%%~</span>nxa^&#x27; &gt;&gt; config.txt</span><br><span class="line">  <span class="built_in">echo</span> duration <span class="number">0</span>.<span class="number">12</span> &gt;&gt; config.txt</span><br><span class="line">)</span><br><span class="line"><span class="comment">REM -framerate帧率可以不指定</span></span><br><span class="line"><span class="comment">REM -vf图片滤镜</span></span><br><span class="line"><span class="comment">REM -b:v视频比特率</span></span><br><span class="line"><span class="comment">REM -CRF恒定质量模式，从 0（最佳质量）到 63（最小文件大小）</span></span><br><span class="line"><span class="keyword">if</span> <span class="variable">%ext%</span>==gif (</span><br><span class="line">ffmpeg -f concat -i config.txt -vf palettegen palette.png</span><br><span class="line">ffmpeg -f concat -i config.txt -i palette.png -lavfi paletteuse -framerate <span class="number">30</span> remux.<span class="variable">%ext%</span> -y</span><br><span class="line">) <span class="keyword">else</span> <span class="keyword">if</span> <span class="variable">%ext%</span>==webm (</span><br><span class="line">ffmpeg -f concat -i config.txt -b:v <span class="number">0</span> -crf <span class="number">18</span> -framerate <span class="number">30</span> remux.<span class="variable">%ext%</span> -y</span><br><span class="line">) <span class="keyword">else</span> (</span><br><span class="line">ffmpeg -f concat -i config.txt -crf <span class="number">18</span> -framerate <span class="number">30</span> remux.<span class="variable">%ext%</span> -y</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>ffmpeg</category>
+      </categories>
+      <tags>
+        <tag>ffmpeg</tag>
+        <tag>bat</tag>
+        <tag>webm</tag>
+        <tag>gif</tag>
+        <tag>mp4</tag>
       </tags>
   </entry>
   <entry>
@@ -1080,13 +1080,13 @@ tag 标签格式</dd>
 <p>简单示例</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-STGJgeDt" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-KpMthuuv" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>进阶示例</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;60198&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-LLKGNsXq" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-iLOhIxck" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="60198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
     ></div>
 <h4 id="audio"><a class="markdownIt-Anchor" href="#audio"></a> Audio</h4>
