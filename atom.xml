@@ -6,7 +6,7 @@
   <link href="https://www.moelody.com/atom.xml" rel="self"/>
   
   <link href="https://www.moelody.com/"/>
-  <updated>2021-03-24T13:34:27.410Z</updated>
+  <updated>2021-06-01T10:09:12.062Z</updated>
   <id>https://www.moelody.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>外置AE快速搜索启动插件QALap</title>
+    <link href="https://www.moelody.com/posts/9c50ad86/"/>
+    <id>https://www.moelody.com/posts/9c50ad86/</id>
+    <published>2021-06-01T01:41:58.000Z</published>
+    <updated>2021-06-01T10:09:12.062Z</updated>
+    
+    
+    <summary type="html">基于Quicker快速运行AE相关的一些脚本、表达式以及导入工程文件。</summary>
+    
+    
+    
+    <category term="AE" scheme="https://www.moelody.com/categories/AE/"/>
+    
+    <category term="插件" scheme="https://www.moelody.com/categories/AE/%E6%8F%92%E4%BB%B6/"/>
+    
+    
+    <category term="自研" scheme="https://www.moelody.com/tags/%E8%87%AA%E7%A0%94/"/>
+    
+    <category term="QALap" scheme="https://www.moelody.com/tags/QALap/"/>
+    
+  </entry>
   
   <entry>
     <title>高级资源管理器Directory Opus的DIY</title>
@@ -188,25 +211,6 @@
     <category term="butterfly" scheme="https://www.moelody.com/tags/butterfly/"/>
     
     <category term="front-matter" scheme="https://www.moelody.com/tags/front-matter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>encrypt</title>
-    <link href="https://www.moelody.com/posts/8df660ab/"/>
-    <id>https://www.moelody.com/posts/8df660ab/</id>
-    <published>2020-05-05T04:12:57.000Z</published>
-    <updated>2021-03-24T13:34:27.410Z</updated>
-    
-    
-    <summary type="html">有东西被加密了, 请输入密码查看.</summary>
-    
-    
-    
-    <category term="测试" scheme="https://www.moelody.com/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="encrypt" scheme="https://www.moelody.com/tags/encrypt/"/>
     
   </entry>
   
