@@ -101,15 +101,6 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/musics/</loc>
-    
-    <lastmod>2021-03-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.moelody.com/messageboard/</loc>
     
     <lastmod>2021-03-24</lastmod>
@@ -128,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/img/pwa/manifest.json</loc>
+    <loc>https://www.moelody.com/musics/</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -137,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/demo/</loc>
+    <loc>https://www.moelody.com/img/pwa/manifest.json</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -155,6 +146,15 @@
   </url>
   
   <url>
+    <loc>https://www.moelody.com/demo/</loc>
+    
+    <lastmod>2021-03-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.moelody.com/iconfont/</loc>
     
     <lastmod>2021-03-24</lastmod>
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/animated/</loc>
+    <loc>https://www.moelody.com/about/</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/about/</loc>
+    <loc>https://www.moelody.com/animated/</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -248,48 +248,6 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/tags/hexo/</loc>
-    <lastmod>2024-05-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.moelody.com/tags/butterfly/</loc>
-    <lastmod>2024-05-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.moelody.com/tags/button/</loc>
-    <lastmod>2024-05-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.moelody.com/tags/%E9%AD%94%E6%94%B9/</loc>
-    <lastmod>2024-05-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.moelody.com/tags/front-matter/</loc>
-    <lastmod>2024-05-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.moelody.com/tags/tags/</loc>
-    <lastmod>2024-05-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.moelody.com/tags/ffmpeg/</loc>
     <lastmod>2024-05-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -319,6 +277,48 @@
   
   <url>
     <loc>https://www.moelody.com/tags/mp4/</loc>
+    <lastmod>2024-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.moelody.com/tags/hexo/</loc>
+    <lastmod>2024-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.moelody.com/tags/butterfly/</loc>
+    <lastmod>2024-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.moelody.com/tags/button/</loc>
+    <lastmod>2024-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.moelody.com/tags/front-matter/</loc>
+    <lastmod>2024-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.moelody.com/tags/%E9%AD%94%E6%94%B9/</loc>
+    <lastmod>2024-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.moelody.com/tags/tags/</loc>
     <lastmod>2024-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -362,14 +362,14 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.moelody.com/categories/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.moelody.com/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://www.moelody.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -390,14 +390,14 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/categories/%E5%8D%9A%E5%AE%A2/Hexo/</loc>
+    <loc>https://www.moelody.com/categories/%E7%AC%94%E8%AE%B0/ffmpeg/</loc>
     <lastmod>2024-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.moelody.com/categories/%E7%AC%94%E8%AE%B0/ffmpeg/</loc>
+    <loc>https://www.moelody.com/categories/%E5%8D%9A%E5%AE%A2/Hexo/</loc>
     <lastmod>2024-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
