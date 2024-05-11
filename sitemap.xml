@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/musics/</loc>
+    <loc>https://www.moelody.com/share/</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/share/</loc>
+    <loc>https://www.moelody.com/musics/</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/demo/</loc>
+    <loc>https://www.moelody.com/categories/</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/categories/</loc>
+    <loc>https://www.moelody.com/demo/</loc>
     
     <lastmod>2021-03-24</lastmod>
     
@@ -269,13 +269,6 @@
   </url>
   
   <url>
-    <loc>https://www.moelody.com/tags/front-matter/</loc>
-    <lastmod>2024-05-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.moelody.com/tags/%E9%AD%94%E6%94%B9/</loc>
     <lastmod>2024-05-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -284,6 +277,13 @@
   
   <url>
     <loc>https://www.moelody.com/tags/tags/</loc>
+    <lastmod>2024-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.moelody.com/tags/front-matter/</loc>
     <lastmod>2024-05-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
